@@ -5,6 +5,49 @@ body {
   color: #434455;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  max-width: 1158px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 :root {
   --iris: #4d5ae5;
   --navyblue: #2e2f42;
@@ -12,6 +55,7 @@ body {
   --white: #fff;
   --cloud: #f4f4fd;
   --ocean: #404bbf;
+  --cornflower: #e7e9fc;
 }
 
 a {
@@ -23,6 +67,20 @@ ul {
 }
 
 /*          HEADER          */
+
+.header {
+  padding: 24px;
+}
+
+.header-container {
+  display: flex;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+  gap: 76px;
+}
 
 .list {
   list-style: none;
@@ -46,6 +104,11 @@ ul {
   text-decoration: none;
 }
 
+.header-menu {
+  display: flex;
+  gap: 40px;
+}
+
 .header-item-link {
   color: var(--navyblue);
   font-weight: 500;
@@ -57,11 +120,17 @@ ul {
 .header-item-link:active,
 .header-item-link:hover,
 .header-item-link:focus {
-  color: #404bbf;
+  color: var(--ocean);
 }
 
 .header-address {
   font-style: normal;
+  margin-left: auto;
+}
+
+.header-address-list {
+  display: flex;
+  gap: 40px;
 }
 
 .header-address-link {
@@ -73,13 +142,17 @@ ul {
 
 .header-address-link:hover,
 .header-address-link:focus {
-  color: #404bbf;
+  color: var(--ocean);
 }
 
 /*          MAIN - HERO         */
 
 .hero {
+}
+
+.hero-wrap {
   background-color: var(--navyblue);
+  text-align: center;
 }
 
 .hero-title {
@@ -88,6 +161,8 @@ ul {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  padding-top: 188px;
+  padding-bottom: 48px;
 }
 
 .hero-button {
@@ -99,6 +174,9 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+  align-items: center;
+  padding: 16px 32px;
+  margin-bottom: 188px;
 }
 
 .hero .hero-button:hover,
@@ -122,6 +200,17 @@ ul {
   letter-spacing: 0.02em;
 }
 
+.pros-list {
+  width: calc((100% - 24px * 3) / 4);
+}
+
+.pros {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  display: flex;
+  gap: 24px;
+}
+
 /*          What are we doing SECTION         */
 
 .about {
@@ -131,6 +220,13 @@ ul {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  padding: 72px;
+}
+
+.about-list {
+  display: flex;
+  margin-bottom: 120px;
+  gap: 24px;
 }
 
 /*          Our Team SECTION         */
@@ -146,6 +242,14 @@ ul {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  padding-top: 120px;
+  padding-bottom: 72px;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+  padding-bottom: 120px;
 }
 
 .team-list-separate {
@@ -172,6 +276,11 @@ ul {
 
 .footer {
   background-color: var(--navyblue);
+  margin: 120px;
+}
+
+.footer-container {
+  padding-top: 102px;
 }
 
 .footer-logo {
@@ -192,6 +301,9 @@ ul {
   color: var(--cloud);
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-top: 17px;
+  padding-bottom: 100px;
+  width: 264px;
 }
 
 /*----------------------------PORTFOLIO----------------------------*/
@@ -207,12 +319,24 @@ ul {
   font-size: 16px;
   letter-spacing: 0.04em;
   background-color: var(--cloud);
+  padding: 12px 24px;
+  border-radius: 4px;
+  border: 1px solid var(--cornflower);
 }
 
 .portfolio-item-button:hover,
 .portfolio-item-button:focus {
   color: var(--white);
   background-color: var(--ocean);
+}
+
+.portfolio-list {
+  display: flex;
+  align-items: center;
+  padding-top: 96px;
+  padding-bottom: 72px;
+  gap: 24px;
+  padding-left: 271px;
 }
 
 /*          PORTFOLIO ROWS         */
@@ -223,10 +347,25 @@ ul {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  padding-bottom: 8px;
 }
 
 .rows-list-text {
   color: var(--slate);
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.rows {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.rows-card {
+  padding: 32px 16px;
+}
+
+.rows-wrap {
+  padding-bottom: 120px;
 }
