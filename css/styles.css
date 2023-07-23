@@ -152,11 +152,11 @@ ul {
 /*          MAIN - HERO         */
 
 .hero {
+  padding: 188px 0;
+  background-color: var(--navyblue);
 }
 
 .hero-wrap {
-  background-color: var(--navyblue);
-  padding: 188px 0;
 }
 
 .hero-section {
@@ -170,7 +170,7 @@ ul {
   line-height: 1.07;
   letter-spacing: 0.02em;
 
-  padding-bottom: 48px;
+  margin-bottom: 48px;
   max-width: 496px;
 }
 
@@ -187,7 +187,6 @@ ul {
   align-items: center;
   padding: 16px 32px;
   margin: 0 auto;
-
   min-width: 169px;
   height: 56px;
   border: none;
@@ -260,11 +259,8 @@ ul {
 
 /*          Our Team SECTION         */
 
-.team {
-  background-color: var(--cloud);
-}
-
 .fourth-section {
+  background-color: var(--cloud);
   padding: 120px 0;
 }
 
@@ -320,11 +316,10 @@ ul {
 
 .footer {
   background-color: var(--navyblue);
-  padding: 120px;
+  padding: 100px 0;
 }
 
 .footer-container {
-  padding: 100px 0;
 }
 
 .footer-logo {
@@ -347,15 +342,12 @@ ul {
   color: var(--cloud);
   line-height: 1.5;
   letter-spacing: 0.02em;
-
-  padding-bottom: 100px;
-
   max-width: 264px;
 }
 
 /*----------------------------PORTFOLIO----------------------------*/
 
-.portfolio-section {
+.portfolio {
   padding-top: 96px;
   padding-bottom: 120px;
 }
@@ -400,14 +392,13 @@ ul {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .rows-list-text {
   color: var(--slate);
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 8px;
 }
 
 .rows {
